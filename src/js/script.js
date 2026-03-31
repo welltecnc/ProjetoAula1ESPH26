@@ -45,43 +45,105 @@
 
 // OPERADORES ARITMÉTICOS
 
-const valor1=20;
-const valor2=10;
+// const valor1=20;
+// const valor2=10;
 
-console.log(valor1 + valor2);
-console.log(valor1 / valor2);
-console.log(valor1 - valor2);
-console.log(valor1 * valor2);
+// console.log(valor1 + valor2);
+// console.log(valor1 / valor2);
+// console.log(valor1 - valor2);
+// console.log(valor1 * valor2);
 
-//OPERADORES LÓGICOS
+// //OPERADORES LÓGICOS
 
-console.log(valor1 > valor2);
-console.log(valor1 >10 && valor2 != 20);
-console.log(valor2 > 5 || valor1 >50 )
+// console.log(valor1 > valor2);
+// console.log(valor1 >10 && valor2 != 20);
+// console.log(valor2 > 5 || valor1 >50 )
 
-//OPERADORES DE COMPARAÇÃO
-console.log(valor1 < valor2);
-console.log(valor1 >= valor2);
-console.log(valor1 <= valor2);
-console.log(valor1 != valor2);
-console.log(valor1 == valor2);
-console.log(valor1 === valor2);
-console.log("O valor é:", valor2);
+// //OPERADORES DE COMPARAÇÃO
+// console.log(valor1 < valor2);
+// console.log(valor1 >= valor2);
+// console.log(valor1 <= valor2);
+// console.log(valor1 != valor2);
+// console.log(valor1 == valor2);
+// console.log(valor1 === valor2);
+// console.log("O valor é:", valor2);
 
-// exercicio 1
+// // exercicio 1
 
-const p=20;
-const v=10;
-const precoFinal = p-v;
-console.log("O preço final com desconto é:",precoFinal)
-
-
-//Cidade
-const usuarioLogado=1;
-const token=100;
-const transacaoAutorizada= usuarioLogado === 1 && token >=10;
-console.log("Transação Autorizada com sucesso", transacaoAutorizada);
-
-//
+// const p=20;
+// const v=10;
+// const precoFinal = p-v;
+// console.log("O preço final com desconto é:",precoFinal)
 
 
+// //Cidade
+// const usuarioLogado=1;
+// const token=100;
+// const transacaoAutorizada= usuarioLogado === 1 && token >=10;
+// console.log("Transação Autorizada com sucesso", transacaoAutorizada);
+
+//ESTRUTURA CONDICIONAL
+
+//if
+if(false){
+    console.log("é Verdadeiro")
+}
+
+//if/else
+
+let nome="Fiap";
+
+if(nome=="Fiap"){
+    console.log("nome verdadeiro")
+}else{
+    console.log("nome Errado")
+}
+//if encadeado ou aninhado
+
+let idade=45;
+
+if(idade <= 13){
+    console.log("é uma criança")
+}else if(idade >13 && idade <=18){
+    console.log("é um adolescente")
+}else if(idade >18 && idade <=59)
+    console.log("é um adulto")
+else{
+    console.log("é um idoso")
+}
+  
+//SWITCH CASE
+
+let times="brasil";
+
+switch(times){
+    case "santos":
+        console.log("Um time idoso")
+        break;
+    case "sao paulo":
+        console.log("Time Panetone")
+        break;
+    case "palmeiras":
+        console.log("SEM MUNDIAL")
+        break;
+    case "corinthians":
+        console.log("UM time de tradição")
+        break;
+    default:
+        console.log("é tão ruim quanto a seleção brasileira")
+}
+
+// ternaria
+
+let salario=100;
+let resultado = salario ==100 ? "Salario Certo":"SalarioErrado"
+console.log(resultado)
+
+let usuario="fiap";
+let userLogado= usuario ==="fiap"?"Logado com suceso":"usuario inválido"
+console.log(userLogado);
+
+function verificarParImpar(numero){
+    return numero % 2 === 0 ?"PAR":"IMPAR";
+}
+console.log(verificarParImpar(10))

@@ -85,65 +85,93 @@
 //ESTRUTURA CONDICIONAL
 
 //if
-if(false){
-    console.log("é Verdadeiro")
-}
+// if(false){
+//     console.log("é Verdadeiro")
+// }
 
-//if/else
+// //if/else
 
-let nome="Fiap";
+// let nome="Fiap";
 
-if(nome=="Fiap"){
-    console.log("nome verdadeiro")
-}else{
-    console.log("nome Errado")
-}
-//if encadeado ou aninhado
+// if(nome=="Fiap"){
+//     console.log("nome verdadeiro")
+// }else{
+//     console.log("nome Errado")
+// }
+// //if encadeado ou aninhado
 
-let idade=45;
+// let idade=45;
 
-if(idade <= 13){
-    console.log("é uma criança")
-}else if(idade >13 && idade <=18){
-    console.log("é um adolescente")
-}else if(idade >18 && idade <=59)
-    console.log("é um adulto")
-else{
-    console.log("é um idoso")
-}
+// if(idade <= 13){
+//     console.log("é uma criança")
+// }else if(idade >13 && idade <=18){
+//     console.log("é um adolescente")
+// }else if(idade >18 && idade <=59)
+//     console.log("é um adulto")
+// else{
+//     console.log("é um idoso")
+// }
   
-//SWITCH CASE
+// //SWITCH CASE
 
-let times="brasil";
+// let times="brasil";
 
-switch(times){
-    case "santos":
-        console.log("Um time idoso")
-        break;
-    case "sao paulo":
-        console.log("Time Panetone")
-        break;
-    case "palmeiras":
-        console.log("SEM MUNDIAL")
-        break;
-    case "corinthians":
-        console.log("UM time de tradição")
-        break;
-    default:
-        console.log("é tão ruim quanto a seleção brasileira")
+// switch(times){
+//     case "santos":
+//         console.log("Um time idoso")
+//         break;
+//     case "sao paulo":
+//         console.log("Time Panetone")
+//         break;
+//     case "palmeiras":
+//         console.log("SEM MUNDIAL")
+//         break;
+//     case "corinthians":
+//         console.log("UM time de tradição")
+//         break;
+//     default:
+//         console.log("é tão ruim quanto a seleção brasileira")
+// }
+
+// // ternaria
+
+// let salario=100;
+// let resultado = salario ==100 ? "Salario Certo":"SalarioErrado"
+// console.log(resultado)
+
+// let usuario="fiap";
+// let userLogado= usuario ==="fiap"?"Logado com suceso":"usuario inválido"
+// console.log(userLogado);
+
+// function verificarParImpar(numero){
+//     return numero % 2 === 0 ?"PAR":"IMPAR";
+// }
+// console.log(verificarParImpar(10))
+
+//ESTRUTURA DE REPETIÇÃO (LAÇO DE REPETIÇÃO)
+
+//for - Estrutura de repetição utilizada quando sabemos previamente quantas vezes o código vai ser executado
+
+//declaração, operação, incremento
+for(let i=1; i<=5;i++){
+    console.log("Numero:",i);
+}
+// for para array
+
+const linguagens = ["Java","Python","C#","PHP"];
+
+for( let i=0; i < linguagens.length;i++){
+    console.log("Linguagem",i ,":", linguagens[i]);
 }
 
-// ternaria
+const tecnologias =["JS","HTML","CSS"]
 
-let salario=100;
-let resultado = salario ==100 ? "Salario Certo":"SalarioErrado"
-console.log(resultado)
-
-let usuario="fiap";
-let userLogado= usuario ==="fiap"?"Logado com suceso":"usuario inválido"
-console.log(userLogado);
-
-function verificarParImpar(numero){
-    return numero % 2 === 0 ?"PAR":"IMPAR";
+for(const tech of tecnologias){
+     console.log("Estudando",tech)
 }
-console.log(verificarParImpar(10))
+
+const carros ={marca:"Volks",modelo:"Fusca",ano:1980};
+
+for( let dados in carros){
+    console.log(dados,":",carros[dados])
+}

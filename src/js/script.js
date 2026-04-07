@@ -216,9 +216,9 @@ let palpite;
     if(palpite !== sorteio){
         alert("Você Perdeu R$ 100,00")
     }
- } while(palpite == sorteio)
+ } while(palpite !== sorteio)
     if(palpite === sorteio){
-        alert("Parabéns , você acertou e ganhou R$ 100,00")
+        alert(`Parabéns , você acertou ${palpite} e ganhou R$ 100,00`)
     }
        
 
